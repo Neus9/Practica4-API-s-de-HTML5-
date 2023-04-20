@@ -22,6 +22,8 @@ if(window.File && window.FileReader && window.FileList && window.Blob) {
               div.innerHTML = '<video controls id="video" class="thumb" src="' + e.target.result + '" title="'+ escape(theFile.name) + '"/>';
 
               document.getElementById('video-output').insertBefore(div, null);
+            
+              alert("El video esta cargando");
 
               let loadingMessage = document.createElement('p');
 
