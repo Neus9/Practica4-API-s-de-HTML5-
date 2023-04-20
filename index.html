@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <title>Reproductor de video (API)</title>
+</head>
+<body>
+    <div id="div-principal" class="div-principal">
+        
+        <h1 class="titulo">Reproductor de Video</h1>
+       
+        <h2 class="texto">Selecione o arrastre un archivo de video</h2>
+        <div id="seleccion_archivo"  class="seleccion_archivo">
+        <label for="file"></label>
+        <input type="file" class="select-video" id="file" name="file" accept="video/*">
+       </div>
+        
+        <output id="video-output"></output>
+    
+        <div id="controles-div" class="controles">
+            <button class="buttons" id="play" style="visibility: hidden;" title="Reproducir" aria-label="Reproducir">
+                <i class="bi bi-play-fill" role="button" aria-label="Reproducir"></i>
+            </button>
+            <button class="buttons" id="pausa" style="visibility: hidden;" title="Pausa" aria-label="Pausa">
+                <i class="bi bi-pause-fill" role="button" aria-label="Pausar"></i>
+            </button>
+            <button class="buttons" id="subir" style="visibility: hidden;" title="Subir volumen" aria-label="Subir volumen">
+                <i class="bi bi-volume-up-fill" role="button" aria-label="Subir volumen"></i>
+            </button>
+            <button class="buttons" id="bajar" style="visibility: hidden;" title="Bajar volumen" aria-label="Bajar volumen">
+                <i class="bi bi-volume-down-fill" role="button" aria-label="Bajar volumen"></i>
+            </button>
+        </div>
+    
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
